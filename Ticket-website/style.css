@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --navy: #11152b;
+    --purple: #7657f6;
+    --orange: #ffb45b;
+    --muted: #777b8d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    color: var(--navy);
+    background: #fbfaff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 78px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: var(--purple);
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    color: #55596c;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+.nav-button {
+    background: #f0edff;
+    color: var(--purple);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+    padding: 65px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #f1edff, #fff8f0);
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.eyebrow {
+    color: var(--purple);
+    font-weight: 800;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.25;
+    margin: 14px 0;
+    font-weight: 900;
+}
+
+h1 span {
+    color: var(--purple);
+}
+
+.hero-content p {
+    color: var(--muted);
+    line-height: 2;
+    margin-bottom: 28px;
+}
+
+.primary-button {
+    display: inline-block;
+    border: 0;
+    border-radius: 11px;
+    background: var(--purple);
+    color: #fff;
+    padding: 13px 25px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Ticket Design */
+
+.hero-art {
+    width: 360px;
+    height: 330px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.ticket-shape {
+    width: 225px;
+    height: 280px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 18px;
+    transform: rotate(8deg);
+    padding: 27px;
+    position: relative;
+    box-shadow: 0 25px 55px #29204b35;
+}
+
+.ticket-small,
+.ticket-date {
+    color: #bcb0ff;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.ticket-shape strong {
+    display: block;
+    font-size: 35px;
+    line-height: 1.05;
+    margin: 22px 0;
+}
+
+.ticket-line {
+    border-top: 2px dashed #77708e;
+    margin: 20px 0;
+}
+
+/* Events */
+
+.events-section {
+    padding: 85px 9%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 5px 0 0;
+    font-weight: 900;
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filters input,
+.filters select,
+.modal input,
+.modal select {
+    border: 1px solid #e7e4f0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    background: #fff;
+    font-family: inherit;
+    outline: none;
+}
+
+.filters input {
+    flex: 1;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px #2420440b;
+    border: 1px solid #f0eef6;
+    transition: .2s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.event-image span {
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    font-size: 10px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.event-image b {
+    font-size: 90px;
+    color: #fff;
+}
+
+.music {
+    background: linear-gradient(135deg, #37245e, #a56bff);
+}
+
+.football {
+    background: linear-gradient(135deg, #12634d, #70c68b);
+}
+
+.comedy {
+    background: linear-gradient(135deg, #e66c65, #ffbd70);
+}
+
+.event-info {
+    padding: 19px;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #9695a5;
+    font-size: 11px;
+}
+
+.event-info h3 {
+    margin: 10px 0 3px;
+    font-size: 20px;
+}
+
+.event-info p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card-bottom strong {
+    color: var(--purple);
+}
+
+.book-button {
+    border: 0;
+    background: #f0edff;
+    color: var(--purple);
+    padding: 9px 16px;
+    border-radius: 9px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.empty-message {
+    color: var(--muted);
+    text-align: center;
+    padding: 30px;
+}
+
+/* About */
+
+.about {
+    padding: 75px 10%;
+    background: #f2efff;
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+    text-align: right;
+}
+
+.steps div {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.steps b {
+    color: var(--purple);
+    font-size: 27px;
+}
+
+.steps p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Footer */
+
+footer {
+    padding: 25px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+footer p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* Booking Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #11152bbd;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    width: min(100%, 440px);
+    max-height: 90vh;
+    overflow: auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    border: 0;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal-box h2 {
+    font-size: 27px;
+}
+
+.selected-event {
+    color: var(--purple);
+    font-weight: 800;
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#bookingForm label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.total-row strong {
+    color: var(--purple);
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.success-message {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.success-icon {
+    margin: auto;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #e8f8ef;
+    color: #20a45c;
+    font-size: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding: 55px 7%;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .events-section {
+        padding: 65px 6%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 5%;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+        flex-direction: column;
+        padding: 48px 7% 20px;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 55px 7%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

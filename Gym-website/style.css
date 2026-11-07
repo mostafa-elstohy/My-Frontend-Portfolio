@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    direction: rtl;
+}
+
+
+/* Navbar */
+
+header {
+    width: 100%;
+    height: 75px;
+    background: #080808;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    direction: ltr;
+}
+
+.logo span {
+    color: #ff2b2b;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff2b2b;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.8)
+        ),
+        url("gym.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #ff2b2b;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: #ff2b2b;
+    color: white;
+
+    padding: 15px 40px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff2b2b;
+}
+
+
+/* About */
+
+.about {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: #ff2b2b;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #1b1b1b;
+
+    width: 300px;
+
+    padding: 40px 25px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid #ff2b2b;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+
+/* Plans */
+
+.plans {
+    background: #080808;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: #1a1a1a;
+
+    width: 300px;
+
+    padding: 40px 25px;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.plan h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 40px;
+    color: #ff2b2b;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.price small {
+    font-size: 18px;
+    color: white;
+}
+
+.plan p {
+    color: #bbb;
+    margin: 15px 0;
+}
+
+.plan button {
+    border: none;
+
+    background: #ff2b2b;
+    color: white;
+
+    padding: 13px 35px;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.plan button:hover {
+    background: white;
+    color: #ff2b2b;
+}
+
+.best {
+    border: 2px solid #ff2b2b;
+}
+
+.popular {
+    position: absolute;
+
+    top: -15px;
+    right: 50%;
+
+    transform: translateX(50%);
+
+    background: #ff2b2b;
+
+    padding: 7px 20px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* Contact */
+
+.contact {
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+.contact p {
+    margin: 20px 0;
+
+    color: #bbb;
+
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #050505;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #ff2b2b;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #888;
+
+    margin: 10px 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .feature,
+    .plan {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}

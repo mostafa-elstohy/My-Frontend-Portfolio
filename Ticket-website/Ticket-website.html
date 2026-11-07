@@ -1,0 +1,278 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تذكرتي | احجز مكانك</title>
+      
+         
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="#">تذكرتي<span>.</span></a>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#events">الفعاليات</a>
+            <a href="#about">عن الموقع</a>
+        </nav>
+
+        <a class="nav-button" href="#events">احجز تذكرتك</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">تجارب تستاهل تعيشها</span>
+
+                <h1>لحظاتك الحلوة<br>تبدأ من <span>هنا.</span></h1>
+
+                <p>
+                    اكتشف أقوى الحفلات والفعاليات
+                    واحجز تذكرتك في خطوات بسيطة.
+                </p>
+
+                <a class="primary-button" href="#events">
+                    اكتشف الفعاليات
+                </a>
+            </div>
+
+            <div class="hero-art">
+                <div class="ticket-shape">
+                    <span class="ticket-small">YOUR TICKET</span>
+                    <strong>LIVE<br>THE<br>MOMENT</strong>
+                    <div class="ticket-line"></div>
+                    <span class="ticket-date">2026 · EGYPT</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section" id="events">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">اختار خروحتك الجاية</span>
+                    <h2>الفعاليات المتاحة</h2>
+                </div>
+
+                <p>اختار الفعالية المناسبة ليك واحجز مكانك.</p>
+            </div>
+
+            <div class="filters">
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="ابحث عن فعالية..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="all">كل الفعاليات</option>
+                    <option value="concert">حفلات</option>
+                    <option value="sport">رياضة</option>
+                    <option value="show">عروض</option>
+                </select>
+            </div>
+
+            <div class="events-grid" id="eventsGrid">
+
+                <article class="event-card"
+                    data-category="concert"
+                    data-name="ليلة موسيقى">
+
+                    <div class="event-image music">
+                        <span>LIVE MUSIC</span>
+                        <b>♪</b>
+                    </div>
+
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <span>15 ديسمبر 2026</span>
+                            <span>القاهرة</span>
+                        </div>
+
+                        <h3>ليلة موسيقى</h3>
+                        <p>ليلة مليانة موسيقى وأجواء مميزة.</p>
+
+                        <div class="card-bottom">
+                            <strong>250 جنيه</strong>
+
+                            <button class="book-button"
+                                data-event="ليلة موسيقى"
+                                data-price="250">
+                                احجز الآن
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                    data-category="sport"
+                    data-name="مباراة القمة">
+
+                    <div class="event-image football">
+                        <span>BIG MATCH</span>
+                        <b>⚽</b>
+                    </div>
+
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <span>20 ديسمبر 2026</span>
+                            <span>القاهرة</span>
+                        </div>
+
+                        <h3>مباراة القمة</h3>
+                        <p>عش أجواء التشجيع والحماس من المدرجات.</p>
+
+                        <div class="card-bottom">
+                            <strong>180 جنيه</strong>
+
+                            <button class="book-button"
+                                data-event="مباراة القمة"
+                                data-price="180">
+                                احجز الآن
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                    data-category="show"
+                    data-name="ستاند أب كوميدي">
+
+                    <div class="event-image comedy">
+                        <span>GOOD VIBES</span>
+                        <b>☺</b>
+                    </div>
+
+                    <div class="event-info">
+                        <div class="event-meta">
+                            <span>25 ديسمبر 2026</span>
+                            <span>الإسكندرية</span>
+                        </div>
+
+                        <h3>ستاند أب كوميدي</h3>
+                        <p>سهرة ضحك وخفة دم مع مجموعة من الكوميديانز.</p>
+
+                        <div class="card-bottom">
+                            <strong>150 جنيه</strong>
+
+                            <button class="book-button"
+                                data-event="ستاند أب كوميدي"
+                                data-price="150">
+                                احجز الآن
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                مفيش فعاليات مطابقة للبحث.
+            </p>
+
+        </section>
+
+        <section class="about" id="about">
+            <span class="eyebrow">بكل سهولة</span>
+            <h2>حجزك في 3 خطوات</h2>
+
+            <div class="steps">
+                <div>
+                    <b>01</b>
+                    <h3>اختار الفعالية</h3>
+                    <p>تصفح الفعاليات المتاحة.</p>
+                </div>
+
+                <div>
+                    <b>02</b>
+                    <h3>اكتب بياناتك</h3>
+                    <p>حدد عدد التذاكر وبيانات الحجز.</p>
+                </div>
+
+                <div>
+                    <b>03</b>
+                    <h3>أكد الحجز</h3>
+                    <p>هتظهرلك تفاصيل حجزك فورًا.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#">تذكرتي<span>.</span></a>
+        <p>© 2026 تذكرتي - مشروع تدريبي</p>
+    </footer>
+
+    <!-- Booking Modal -->
+
+    <div class="modal" id="bookingModal" aria-hidden="true">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeModal">×</button>
+
+            <span class="eyebrow">خطوة واحدة وتبقى جاهز</span>
+
+            <h2 id="modalTitle">احجز تذكرتك</h2>
+
+            <p class="selected-event" id="selectedEvent"></p>
+
+            <form id="bookingForm">
+
+                <label for="customerName">الاسم بالكامل</label>
+                <input id="customerName"
+                    type="text"
+                    placeholder="اكتب اسمك"
+                    required minlength="3">
+
+                <label for="customerEmail">البريد الإلكتروني</label>
+                <input id="customerEmail"
+                    type="email"
+                    placeholder="name@example.com"
+                    required>
+
+                <label for="ticketCount">عدد التذاكر</label>
+
+                <select id="ticketCount">
+                    <option value="1">1 تذكرة</option>
+                    <option value="2">2 تذكرة</option>
+                    <option value="3">3 تذاكر</option>
+                    <option value="4">4 تذاكر</option>
+                </select>
+
+                <div class="total-row">
+                    <span>الإجمالي</span>
+                    <strong id="totalPrice">0 جنيه</strong>
+                </div>
+
+                <button class="primary-button submit-button"
+                    type="submit">
+                    تأكيد الحجز
+                </button>
+
+            </form>
+
+            <div class="success-message" id="successMessage" hidden>
+
+                <div class="success-icon">✓</div>
+
+                <h3>تم تسجيل حجزك بنجاح!</h3>
+
+                <p id="bookingSummary"></p>
+
+                <button class="primary-button" id="doneButton">
+                    تمام
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
