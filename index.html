@@ -1,0 +1,448 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mostafa Elstohy - Front-End Developer Portfolio">
+
+    <title>Mostafa Elstohy | Front-End Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="nav container">
+
+        <a class="logo" href="#home">ME<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+
+            <a href="#about" data-en="About" data-ar="عني">About</a>
+
+            <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+
+            <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+
+            <a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a>
+
+            <button class="lang-btn" id="languageBtn">العربية</button>
+
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HOME SECTION -->
+
+    <section class="hero container" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                <span class="dot"></span>
+                <span data-en="FRONT-END DEVELOPER" data-ar="مطور واجهات أمامية">
+                    FRONT-END DEVELOPER
+                </span>
+            </p>
+
+            <h1>
+                <span data-en="Hello, I'm" data-ar="أهلاً، أنا">Hello, I'm</span>
+                <br>
+                <span class="accent">Mostafa Elstohy</span>
+            </h1>
+
+            <h2
+                data-en="I build websites for the web."
+                data-ar="ببني مواقع ويب عصرية.">
+                I build websites for the web.
+            </h2>
+
+            <p class="intro"
+                data-en="I create responsive and user-friendly websites using HTML, CSS and JavaScript. Take a look at my projects and feel free to contact me."
+                data-ar="بصمم وبنفذ مواقع متجاوبة وسهلة الاستخدام باستخدام HTML وCSS وJavaScript. اتفرج على مشاريعي ومتترددش تتواصل معايا.">
+
+                I create responsive and user-friendly websites using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="actions">
+
+                <a class="btn primary" href="#projects"
+                    data-en="View My Projects ↘"
+                    data-ar="شوف مشاريعي ↘">
+                    View My Projects ↘
+                </a>
+
+                <a class="btn outline"
+                    href="mailto:mostafaelstohy1931@gmail.com"
+                    data-en="Contact Me ↗"
+                    data-ar="تواصل معايا ↗">
+                    Contact Me ↗
+                </a>
+
+            </div>
+
+            <div class="quick-links">
+
+                <a href="https://wa.me/201211597916" target="_blank">
+                    WhatsApp ↗
+                </a>
+
+                <a href="mailto:mostafaelstohy1931@gmail.com">
+                    Email ↗
+                </a>
+
+                <a href="https://github.com/mostafa-elstohy" target="_blank">
+                    GitHub ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-photo-wrap">
+
+    <div class="photo-glow"></div>
+
+    <img
+        src="profile.jpeg.jpeg"
+        alt="Mostafa Elstohy"
+        class="profile-photo"
+        width="400px"
+        height="400px"
+    >
+
+    <div class="photo-caption">
+        <span class="status-dot"></span>
+        Front-End Developer
+    </div>
+
+</div>
+    </section>
+
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="section container" id="about">
+
+        <div class="section-heading">
+
+            <p class="kicker" data-en="WHO I AM" data-ar="مين أنا">
+                WHO I AM
+            </p>
+
+            <h2 data-en="About Me" data-ar="نبذة عني">
+                About Me
+            </h2>
+
+        </div>
+
+        <div class="panel">
+
+            <p
+                data-en="I'm Mostafa Elstohy, a Front-End Developer interested in building clean, responsive and easy-to-use websites. I work with HTML, CSS and JavaScript, and I keep developing my skills through practical projects."
+                data-ar="أنا مصطفى الأسطوحي، مطور واجهات أمامية مهتم ببناء مواقع منظمة ومتجاوبة وسهلة الاستخدام. بستخدم HTML وCSS وJavaScript، وبطوّر مهاراتي باستمرار من خلال تنفيذ مشاريع عملية.">
+
+                I'm Mostafa Elstohy, a Front-End Developer interested in building clean, responsive and easy-to-use websites.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SKILLS SECTION -->
+
+    <section class="section container" id="skills">
+
+        <div class="section-heading">
+
+            <p class="kicker" data-en="MY TOOLKIT" data-ar="الأدوات اللي بستخدمها">
+                MY TOOLKIT
+            </p>
+
+            <h2 data-en="Skills" data-ar="المهارات">
+                Skills
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <article class="skill">
+                <span>01</span>
+                <h3>HTML5</h3>
+                <p data-en="Semantic structure" data-ar="بناء هيكل صفحات منظم">
+                    Semantic structure
+                </p>
+            </article>
+
+            <article class="skill">
+                <span>02</span>
+                <h3>CSS3</h3>
+                <p data-en="Styling and responsive layouts" data-ar="التنسيق والتصميم المتجاوب">
+                    Styling and responsive layouts
+                </p>
+            </article>
+
+            <article class="skill">
+                <span>03</span>
+                <h3>JavaScript</h3>
+                <p data-en="Interactive user experiences" data-ar="إضافة التفاعل للمواقع">
+                    Interactive user experiences
+                </p>
+            </article>
+
+            <article class="skill">
+                <span>04</span>
+                <h3>Git & GitHub</h3>
+                <p data-en="Code versioning and repositories" data-ar="إدارة الكود والمستودعات">
+                    Code versioning and repositories
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section class="section container" id="projects">
+
+        <div class="section-heading">
+
+            <p class="kicker" data-en="SOME THINGS I'VE BUILT" data-ar="نماذج من شغلي">
+                SOME THINGS I'VE BUILT
+            </p>
+
+            <h2 data-en="Featured Projects" data-ar="أبرز المشاريع">
+                Featured Projects
+            </h2>
+
+            <p class="section-note"
+                data-en="Explore some of my practical projects."
+                data-ar="اتفرج على بعض مشاريعي العملية.">
+
+                Explore some of my practical projects.
+
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <article class="project">
+
+                <div class="project-visual gym">
+                    HERO
+                    <span>GYM</span>
+                </div>
+
+                <p class="project-index">PROJECT / 01</p>
+
+                <h3 data-en="Gym Website" data-ar="موقع الجيم">
+                    Gym Website
+                </h3>
+
+                <p
+                    data-en="A gym website concept with a clear landing page and membership sections."
+                    data-ar="موقع جيم بواجهة رئيسية وأقسام للاشتراكات والخدمات.">
+
+                    A gym website concept with a clear landing page.
+
+                </p>
+
+                <a href="./Gym-website/gym.html"
+                    data-en="Open project ↗"
+                    data-ar="افتح المشروع ↗">
+                    Open project ↗
+                </a>
+
+            </article>
+
+
+
+            <article class="project">
+
+                <div class="project-visual ticket">
+                    TICKET
+                    <span>BOOKING</span>
+                </div>
+
+                <p class="project-index">PROJECT / 02</p>
+
+                <h3 data-en="Ticket Booking" data-ar="حجز التذاكر">
+                    Ticket Booking
+                </h3>
+
+                <p
+                    data-en="A front-end ticket booking interface built as a practical project."
+                    data-ar="واجهة أمامية لحجز التذاكر كمشروع تطبيقي.">
+
+                    A front-end ticket booking interface.
+
+                </p>
+
+                <a href="./Ticket-website/Ticket-website.html"
+                    data-en="Open project ↗"
+                    data-ar="افتح المشروع ↗">
+                    Open project ↗
+                </a>
+
+            </article>
+
+
+
+            <article class="project">
+
+                <div class="project-visual zakat">
+                    ZAKAT
+                    <span>CALCULATOR</span>
+                </div>
+
+                <p class="project-index">PROJECT / 03</p>
+
+                <h3 data-en="Zakat Website" data-ar="موقع الزكاة">
+                    Zakat Website
+                </h3>
+
+                <p
+                    data-en="A simple website for presenting zakat information and calculations."
+                    data-ar="موقع بسيط لعرض معلومات وحسابات الزكاة.">
+
+                    A simple website for presenting zakat information.
+
+                </p>
+
+                <a href="./zakat-website/zakat-Website.html"
+                    data-en="Open project ↗"
+                    data-ar="افتح المشروع ↗">
+                    Open project ↗
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="section container" id="contact">
+
+        <div class="section-heading">
+
+            <p class="kicker" data-en="GET IN TOUCH" data-ar="خلينا نتواصل">
+                GET IN TOUCH
+            </p>
+
+            <h2
+                data-en="Let's work together."
+                data-ar="خلينا نشتغل سوا.">
+
+                Let's work together.
+
+            </h2>
+
+            <p class="section-note"
+                data-en="Have a question or a project? Contact me directly."
+                data-ar="عندك سؤال أو مشروع؟ تواصل معايا مباشرة.">
+
+                Have a question or a project? Contact me directly.
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <a class="contact-card"
+                href="mailto:mostafaelstohy1931@gmail.com">
+
+                <span>✉</span>
+                <small>Email</small>
+                <strong>mostafaelstohy1931@gmail.com</strong>
+
+            </a>
+
+
+            <a class="contact-card"
+                href="https://wa.me/201211597916"
+                target="_blank">
+
+                <span>☏</span>
+                <small>WhatsApp</small>
+
+                <strong data-en="Message me ↗" data-ar="ابعتلي رسالة ↗">
+                    Message me ↗
+                </strong>
+
+                <em>+20 121 159 7916</em>
+
+            </a>
+
+
+            <a class="contact-card"
+                href="https://github.com/mostafa-elstohy"
+                target="_blank">
+
+                <span>⌘</span>
+                <small>GitHub</small>
+
+                <strong data-en="GitHub profile ↗" data-ar="حساب GitHub ↗">
+                    GitHub profile ↗
+                </strong>
+
+                <em>@mostafa-elstohy</em>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <p>
+        © <span id="year"></span> Mostafa Elstohy ·
+        <span data-en="Built with HTML, CSS & JavaScript."
+            data-ar="تم بناؤه باستخدام HTML وCSS وJavaScript.">
+            Built with HTML, CSS & JavaScript.
+        </span>
+    </p>
+
+</footer>
+
+</body>
+</html>
